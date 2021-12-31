@@ -1,6 +1,4 @@
-/*Code designed by Sujay Alaspure in SA Lab */
-
-const int sensor=A1; // Assigning analog pin A5 to variable 'sensor'
+const int sensor=A1; // Assigning analog pin A1 to variable 'sensor'
 
 float tempc; //variable to store temperature in degree Celsius
 
@@ -26,7 +24,7 @@ tempc=vout; // Storing value in Degree Celsius
 
 tempf=(vout*1.8)+32; // Converting to Fahrenheit
 
-Serial.print(" Temprature in Degree C=");
+Serial.print(" Temprature in Degree C = ");
 
 Serial.print("  ");
 
@@ -34,7 +32,7 @@ Serial.print(tempc);
 
 Serial.print(" ");
 
-Serial.print(" Temprature in Fahrenheit=");
+Serial.print(" Temprature in Fahrenheit = ");
 
 Serial.print("  ");
 
@@ -42,5 +40,5 @@ Serial.print(tempf);
 
 Serial.println();
 
-delay(500); //Delay of 1 second for ease of viewing 
+delay(1000); //Delay of 1 second for the ease of viewing.
 }
